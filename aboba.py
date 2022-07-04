@@ -12,7 +12,6 @@ class Timer:
 
 def check1():
     try:
-        print("check1 start")
         requests.head("https://asdf-vm.com")
         print("Sucesfull")
     except BaseException as govno:
@@ -21,7 +20,6 @@ def check1():
 
 def check2():
     try:
-        print("check2 start")
         urllib.request.urlopen("https://asdf-vm.com")
         print("Sucesfull")
     except BaseException as govno:
