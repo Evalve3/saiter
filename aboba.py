@@ -123,7 +123,7 @@ class DB():
 
 
 def main():
-    cursor, connection = DB.db_connect("postgress", "123", "localhost", "5432", "Sites")
+    connection, cursor = DB.db_connect("postgres", "123", "localhost", "5432", "Sites")
     if (connection):
         a = set(permutations(ascii_lowercase, 2))
         for i in a:
