@@ -10,7 +10,7 @@ class TimeoutException(Exception):
         pass
 
 
-def signal_handler(signum, frame):
+def signal_handler():
     raise TimeoutException()
 
 
